@@ -1,0 +1,282 @@
+/*VARIABLES*/
+$font-primary: 'Poppins', sans-serif;
+$color-font: #2B4851;
+$color-font2: grey;
+$color-font_light: #81a3ad;
+$color-font3:#efd6d1;
+
+
+/*ALL*/
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: $font-primary;
+}
+
+/*BUTTONS*/
+$botones:(
+    acciona: $color-font_light,
+    gral: $color-font2,
+    tienda: $color-font3,
+);
+@each $fondo, $color in $botones{
+    .btn-#{$fondo}  {
+        background-color:$color;
+        color:white;
+    }
+}
+
+
+/*INDEX*/
+.body_img{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+.container_nav{
+  margin: 10%;
+  margin-top: unset;
+  margin-bottom: unset;
+         .logo{
+          width: 50%;
+            }
+}
+
+.navbar{
+    font-size: 150%;
+    a{
+        text-decoration: none;
+        color: $color-font2;
+    }
+    a:hover{
+        color: white;
+    }
+}
+
+.posicionamiento{
+    width: 50%;
+}
+
+.card{
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    margin: 0% 50px 10% 25%;
+        p{
+        font-size: 110%;
+        margin: 10%;
+        text-align: center;
+        letter-spacing: 2px;
+        color:$color-font2; 
+        font-weight: bold;
+    }
+
+}
+.card2{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50%;
+    padding-right: 10%;
+        .logo_garantia{
+            width: 50%;
+            background-color:white;
+            border-radius: 50%
+        }
+}
+
+
+@media (max-width: 720px) {
+    .card {
+    font-size: 50%;
+    display: flex;
+    columns: 100%;
+    width: 50%;
+}
+.card2 {
+    justify-content: center;
+    margin-top: 20%;
+    padding: unset;
+    .logo_garantia{
+        width: 30%;
+        border-radius: 30%;
+    }
+}
+    }
+
+
+/*ACCIONA*/
+    .body_acciona{
+        background-image: url(../img/fondo_acciona-05.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card3{
+        font-size: 50%;
+        display: flex;
+        margin: unset;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .accion{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card{
+        p{
+             font-size:130%;
+        } 
+    }
+.card-body{
+    display: inline-grid;
+    justify-content: center;
+}
+
+.nosotros{
+    width: 55%;
+}
+
+
+
+    @media (max-width: 720px) {
+       .accion{
+        display: grid;
+        justify-items: center;
+        }
+        .card {
+            font-size: 50%;
+            display: flex;
+            columns: 100%;
+            width: 50%;
+        }
+        .card3 {
+        margin-top: 5%;
+    }
+}
+
+    /*TIENDA*/
+
+    .body_tienda{
+        background-image: url(../img/fondo_tienda-06.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }   
+    
+    .card_shop{
+        display: flex;
+        align-items:center;
+        background-color: white;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 30px;
+        box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        margin: 0% 50px 10% 25%;
+            &:hover{
+                background-color:transparent;
+                border-style:solid;
+                border-color:$color-font;
+            }
+
+            img{
+                border-radius: 30px;
+                &:hover{
+                    filter: saturate(150%) 
+                }
+            }
+
+            p{
+                text-align: center;
+                font-weight: bold;
+                color:$color-font2;
+                font-size: 120%;
+                }
+            .btn{
+                    margin-bottom: 5%;
+                    align-self: center;
+                     a{
+                    text-decoration: none;
+                    }
+             }
+             .btn-tienda{
+                 &:hover{
+                     color:#81a3ad;
+                     background-color:white;
+                     border-color:$color-font;
+                 }
+             }
+
+            }
+
+
+
+
+    /*MI CUENTA*/
+
+    /*CONOCE-MAS-PRODUCTO*/
+    .body_prod{
+        background-image: url(../img/fondo_tienda-06.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*FORMULARIO EVENTO*/
+    .body_formulario{
+        background-image: url(../img/fondo_formulario.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-weight:bold;
+        align-content: center;
+        position: relative;
+        padding: 30px;
+    
+            .enviar-form{
+            width: 100%;
+            font-size: 130%;
+            }
+            
+            .button{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 90%;
+                padding-top: 1%;
+            }
+    
+    }
+    
+    .modal{
+        position: fixed;
+    margin-left: 40%;
+    }
+    
+
+
+    /*NOSOTROS*/
+    .body_nosotros{
+        background-image: url(../img/fondo_nosotros.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*FOOTER*/
+    footer{
+        display: flex;
+        justify-content: center;
+    }
