@@ -71,8 +71,33 @@
 
     <!--TIENDA-->
     <div>
-        <div class="row col-12">
-            <div class="col-lg-4 col-12">
+   <!--TIENDA :: filtros-->  
+
+<div class="filtros">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          FILTROS
+        </a>
+        <ul class="dropdown-menu menu_filtros" aria-labelledby="navbarDropdown">
+            <fieldset>
+                <div>
+                    <input type="radio" name="filtro" value="cosmetica">Cosmética
+                </div>
+                <div>
+                   <input type="radio" name="filtro" value="cuidado-personal"> Cuidado personal 
+                </div>
+                <div>
+                    <input type="radio" name="filtro" value="accesorios"> Accesorios
+                 </div>
+                
+            </fieldset>
+        </ul>
+      </li>
+</div>
+
+
+        <div class="col-12">
+            <div class="col-lg-4 col-12 grid_tienda">
                 <!--1-->
                 <div class="card_shop">
                     <img class="card-img-top" src="../img/productos/balsamo2.png" alt="Balsamo labial">
@@ -88,9 +113,9 @@
                 </div>
                 <!--2-->
                 <div class="card_shop">
-                    <img class="card-img-top" src="../img/productos/balsamo2.png" alt="Balsamo labial">
+                    <img class="card-img-top" src="../img/productos/acondicionador.jpg" alt="acondicionador">
                     <div class="card-body">
-                        <p>Balsamo labial neutro </p>
+                        <p>Acondicionador de limón </p>
                         <button class="btn btn-tienda">
                             <a href=" ">Agregá al carrito </a>
                         </button>
@@ -101,9 +126,9 @@
                 </div>
                 <!--3-->
                 <div class="card_shop">
-                    <img class="card-img-top" src="../img/productos/balsamo2.png" alt="Balsamo labial">
+                    <img class="card-img-top" src="../img/productos/pads.jpg" alt="Pads">
                     <div class="card-body">
-                        <p>Balsamo labial neutro </p>
+                        <p>Pads </p>
                             <button class="btn btn-tienda">
                             <a href=" ">Agregá al carrito </a>
                         </button>
@@ -114,9 +139,9 @@
                 </div>
                 <!--4-->
                 <div class="card_shop">
-                    <img class="card-img-top" src="../img/productos/balsamo2.png" alt="Balsamo labial">
+                    <img class="card-img-top" src="../img/productos/shampoo.jpg" alt="shampoo de coco">
                     <div class="card-body">
-                        <p>Balsamo labial neutro </p> 
+                        <p>Shampoo de coco </p> 
                         <button class="btn btn-tienda">
                             <a href=" ">Agregá al carrito </a>
                         </button>
@@ -125,7 +150,71 @@
                         </button>
                     </div>
                 </div>
-
+                <!--5-->
+                <div class="card_shop">
+                    <img class="card-img-top" src="../img/productos/celulitis.jpg" alt="Humectante para celulitis">
+                    <div class="card-body">
+                        <p>Humectante para celulitis </p> 
+                        <button class="btn btn-tienda">
+                            <a href=" ">Agregá al carrito </a>
+                        </button>
+                        <button class="btn btn-tienda">
+                            <a href="conoce-mas-producto.html">Conocé más de cada producto</a>
+                        </button>
+                    </div>
+                </div>
+                <!--6-->
+                <div class="card_shop">
+                    <img class="card-img-top" src="../img/productos/arcilla-facial.jpg" alt="Arcilla facial">
+                    <div class="card-body">
+                        <p>Arcilla verde facial natural</p> 
+                        <button class="btn btn-tienda">
+                            <a href=" ">Agregá al carrito </a>
+                        </button>
+                        <button class="btn btn-tienda">
+                            <a href="conoce-mas-producto.html">Conocé más de cada producto</a>
+                        </button>
+                    </div>
+                </div>
+                <!--7-->
+                <div class="card_shop">
+                    <img class="card-img-top" src="../img/productos/jabonera.jpg" alt="Jabonera">
+                    <div class="card-body">
+                        <p>Jabonera de cerámica</p> 
+                        <button class="btn btn-tienda">
+                            <a href=" ">Agregá al carrito </a>
+                        </button>
+                        <button class="btn btn-tienda">
+                            <a href="conoce-mas-producto.html">Conocé más de cada producto</a>
+                        </button>
+                    </div>
+                </div>
+                <!--8-->
+                <div class="card_shop">
+                    <img class="card-img-top" src="../img/productos/cepillo_dental.jpg" alt="Cepillo dental">
+                    <div class="card-body">
+                        <p>Cepillo dental de bamboo</p> 
+                        <button class="btn btn-tienda">
+                            <a href=" ">Agregá al carrito </a>
+                        </button>
+                        <button class="btn btn-tienda">
+                            <a href="conoce-mas-producto.html">Conocé más de cada producto</a>
+                        </button>
+                    </div>
+                </div>
+                <!--9-->
+                <div class="card_shop">
+                    <img class="card-img-top" src="../img/productos/shampoo2.jpeg" alt="Shampoo de lavanda">
+                    <div class="card-body">
+                        <p>Shampoo de lavanda</p> 
+                        <button class="btn btn-tienda">
+                            <a href=" ">Agregá al carrito </a>
+                        </button>
+                        <button class="btn btn-tienda">
+                            <a href="conoce-mas-producto.html">Conocé más de cada producto</a>
+                        </button>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -138,6 +227,15 @@
         crossorigin="anonymous"></script>
 
 </body>
-<footer></footer>
+<footer>
+    <div class="row">
+        <div class="col-12">
+            Redes sociales
+        </div>
+        <div class="col-12">
+            <small>&copy; Copyright 2021, Wakolda</small>
+        </div>
+    </div>
+</footer>
 
 </html>

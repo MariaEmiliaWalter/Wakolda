@@ -64,16 +64,58 @@
         </div>
     </div>
 
-<!--SIGN IN-->
+    <!--SIGN IN-->
+    <div class="sign-in">
+        <div class="d-flex justify-content-center">
+            <a href=index.html title="Inicio">Inicio</a>
+            <span>/</span>
+            <a href="" title="Mi Cuenta">Mi Cuenta</a>
+            <span>/</span>
+            <span class="active">Login</span>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center">
+
+            <div>
+                <h1>Iniciar sesión</h1>
+            </div>
+
+        </div>
+
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" id="email">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" id="contraseña">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <div id="emailHelp" class="form-text">No compartas con nadie tus datos.</div>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="login()">Ingresar</button>
+        </form>
+        <div class="d-flex justify-content-center">
+            <p> ¿No tenés cuenta? <a href="" title="">Crear cuenta</a></p>
+        </div>
+    </div>
 
 
+    <!--SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 
- <!--SCRIPT-->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
- integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
- crossorigin="anonymous"></script>
- 
 </body>
+
 <footer>
-    </footer>
+    <div class="row">
+        <div class="col-12">
+            Redes sociales
+        </div>
+        <div class="col-12">
+            <small>&copy; Copyright 2021, Wakolda</small>
+        </div>
+    </div>
+</footer>
+
 </html>

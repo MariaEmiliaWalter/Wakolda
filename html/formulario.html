@@ -105,32 +105,13 @@
         <input type="radio" name="aceptacion" value="no"> No, prefiero informarme por mi cuenta.
     </fieldset>
 
+   
     <div>
         <!-- button -->
         <button class="btn btn-gral enviar-form" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Enviar formulario
         </button>
     </div>
-
-    <!-- Modal -->
-    <div class="modal fade modal-dialog modal-dialog-centered" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">¡Gracias por ser parte!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    @usuario, ya estás adentro. De ahora en más serás parte de todas las acciones increibles que realicemos.
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-tienda" data-bs-dismiss="modal">¡Seguir navegando!</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <div class="button">
         <button class="btn btn-gral" >
@@ -140,6 +121,25 @@
         <button class= " btn btn-gral">
             Resetear formulario
         </button>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¡Gracias por ser parte!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-dialog modal-dialog-centered">
+                    @usuario, ya estás adentro. De ahora en más serás parte de todas las acciones increibles que realicemos.
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-tienda" data-bs-dismiss="modal">¡Seguir navegando!</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 </form>
@@ -154,5 +154,13 @@
  
 </body>
 <footer>
-    </footer>
+    <div class="row">
+        <div class="col-12">
+            Redes sociales
+        </div>
+        <div class="col-12">
+            <small>&copy; Copyright 2021, Wakolda</small>
+        </div>
+    </div>
+</footer>
 </html>
