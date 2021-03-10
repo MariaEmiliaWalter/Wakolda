@@ -1,11 +1,11 @@
-function App() {}
+function Carousel() {}
 
 window.onload = function (event) {
-    var app = new App();
-    window.app = app;
+    var carousel = new Carousel();
+    window.carousel = carousel;
 };
 
-App.prototype.processingButton = function(event) {
+Carousel.prototype.processingButton = function(event) {
     const btn = event.currentTarget;
     const slickList = event.currentTarget.parentNode;
     const track = event.currentTarget.parentNode.querySelector('#track');
@@ -33,3 +33,4 @@ let nextAction = (leftPosition,trackWidth,listWidth,slickWidth,track) => {
         track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
     }
 }
+
